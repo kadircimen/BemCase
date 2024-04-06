@@ -3,9 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BemCase.Web", "BemCase.Web\BemCase.Web.csproj", "{FDDE55CB-AFE7-483B-AF11-FF8C022B59B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{472944D9-84C1-4D13-9613-FC1213BA9498}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDDE55CB-AFE7-483B-AF11-FF8C022B59B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDDE55CB-AFE7-483B-AF11-FF8C022B59B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDDE55CB-AFE7-483B-AF11-FF8C022B59B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDDE55CB-AFE7-483B-AF11-FF8C022B59B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FDDE55CB-AFE7-483B-AF11-FF8C022B59B2} = {472944D9-84C1-4D13-9613-FC1213BA9498}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E160481C-9058-4399-96BF-3E3C1A5F8699}
