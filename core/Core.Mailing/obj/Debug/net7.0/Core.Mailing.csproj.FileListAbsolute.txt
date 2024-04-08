@@ -1,0 +1,15 @@
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Mailing\bin\Debug\net7.0\Core.Mailing.deps.json
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Mailing\bin\Debug\net7.0\Core.Mailing.dll
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Mailing\bin\Debug\net7.0\Core.Mailing.pdb
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Mailing\bin\Debug\net7.0\Core.CrossCuttingConcerns.dll
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Mailing\bin\Debug\net7.0\Core.CrossCuttingConcerns.pdb
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Mailing\obj\Debug\net7.0\Core.Mailing.csproj.AssemblyReference.cache
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Mailing\obj\Debug\net7.0\Core.Mailing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Mailing\obj\Debug\net7.0\Core.Mailing.AssemblyInfoInputs.cache
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Mailing\obj\Debug\net7.0\Core.Mailing.AssemblyInfo.cs
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Mailing\obj\Debug\net7.0\Core.Mailing.csproj.CoreCompileInputs.cache
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Mailing\obj\Debug\net7.0\Core.Mailing.csproj.CopyComplete
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Mailing\obj\Debug\net7.0\Core.Mailing.dll
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Mailing\obj\Debug\net7.0\refint\Core.Mailing.dll
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Mailing\obj\Debug\net7.0\Core.Mailing.pdb
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Mailing\obj\Debug\net7.0\ref\Core.Mailing.dll

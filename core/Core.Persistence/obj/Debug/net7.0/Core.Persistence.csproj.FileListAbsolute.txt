@@ -1,0 +1,12 @@
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Persistence\bin\Debug\net7.0\Core.Persistence.deps.json
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Persistence\bin\Debug\net7.0\Core.Persistence.dll
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Persistence\bin\Debug\net7.0\Core.Persistence.pdb
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Persistence\obj\Debug\net7.0\Core.Persistence.csproj.AssemblyReference.cache
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Persistence\obj\Debug\net7.0\Core.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Persistence\obj\Debug\net7.0\Core.Persistence.AssemblyInfoInputs.cache
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Persistence\obj\Debug\net7.0\Core.Persistence.AssemblyInfo.cs
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Persistence\obj\Debug\net7.0\Core.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Persistence\obj\Debug\net7.0\Core.Persistence.dll
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Persistence\obj\Debug\net7.0\refint\Core.Persistence.dll
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Persistence\obj\Debug\net7.0\Core.Persistence.pdb
+C:\Users\Kadir Çimen\Desktop\Projects\BemCase\core\Core.Persistence\obj\Debug\net7.0\ref\Core.Persistence.dll
