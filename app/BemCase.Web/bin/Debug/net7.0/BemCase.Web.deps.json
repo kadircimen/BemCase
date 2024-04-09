@@ -37,7 +37,6 @@
         "dependencies": {
           "BemCase.Application": "1.0.0",
           "BemCase.Persistence": "1.0.0",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.17",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "7.0.17",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "7.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.17",
@@ -129,7 +128,7 @@
           "Microsoft.Extensions.Configuration.Abstractions.Reference": "7.0.0.0",
           "Microsoft.Extensions.Configuration.Binder.Reference": "7.0.0.0",
           "Microsoft.Extensions.Configuration.CommandLine": "7.0.0.0",
-          "Microsoft.Extensions.Configuration": "7.0.0.0",
+          "Microsoft.Extensions.Configuration.Reference": "7.0.0.0",
           "Microsoft.Extensions.Configuration.EnvironmentVariables": "7.0.0.0",
           "Microsoft.Extensions.Configuration.FileExtensions": "7.0.0.0",
           "Microsoft.Extensions.Configuration.Ini": "7.0.0.0",
@@ -160,7 +159,7 @@
           "Microsoft.Extensions.Logging.EventSource": "7.0.0.0",
           "Microsoft.Extensions.Logging.TraceSource": "7.0.0.0",
           "Microsoft.Extensions.ObjectPool.Reference": "7.0.0.0",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "7.0.0.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions.Reference": "7.0.0.0",
           "Microsoft.Extensions.Options.DataAnnotations": "7.0.0.0",
           "Microsoft.Extensions.Options.Reference": "7.0.0.0",
           "Microsoft.Extensions.Primitives.Reference": "7.0.0.0",
@@ -207,6 +206,7 @@
           "System.Drawing": "4.0.0.0",
           "System.Drawing.Primitives": "7.0.0.0",
           "System.Dynamic.Runtime": "7.0.0.0",
+          "System.Formats.Asn1.Reference": "7.0.0.0",
           "System.Formats.Tar": "7.0.0.0",
           "System.Globalization.Calendars": "7.0.0.0",
           "System.Globalization": "7.0.0.0",
@@ -299,6 +299,7 @@
           "System.Security.SecureString": "7.0.0.0",
           "System.ServiceModel.Web": "4.0.0.0",
           "System.ServiceProcess": "4.0.0.0",
+          "System.Text.Encoding.CodePages.Reference": "7.0.0.0",
           "System.Text.Encoding.Reference": "7.0.0.0",
           "System.Text.Encoding.Extensions": "7.0.0.0",
           "System.Text.Encodings.Web.Reference": "7.0.0.0",
@@ -406,17 +407,6 @@
         },
         "compile": {
           "lib/netstandard2.0/Azure.Identity.dll": {}
-        }
-      },
-      "BouncyCastle.Cryptography/2.3.0": {
-        "runtime": {
-          "lib/net6.0/BouncyCastle.Cryptography.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.3.0.53016"
-          }
-        },
-        "compile": {
-          "lib/net6.0/BouncyCastle.Cryptography.dll": {}
         }
       },
       "FluentValidation/11.9.0": {
@@ -556,20 +546,6 @@
           }
         }
       },
-      "MailKit/4.4.0": {
-        "dependencies": {
-          "MimeKit": "4.4.0"
-        },
-        "runtime": {
-          "lib/net6.0/MailKit.dll": {
-            "assemblyVersion": "4.4.0.0",
-            "fileVersion": "4.4.0.0"
-          }
-        },
-        "compile": {
-          "lib/net6.0/MailKit.dll": {}
-        }
-      },
       "MediatR/12.2.0": {
         "dependencies": {
           "MediatR.Contracts": "2.0.1",
@@ -624,20 +600,6 @@
           "Microsoft.AspNetCore.Authentication.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Http": "2.2.0",
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0"
-        }
-      },
-      "Microsoft.AspNetCore.Authentication.JwtBearer/7.0.17": {
-        "dependencies": {
-          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.35.0"
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
-            "assemblyVersion": "7.0.17.0",
-            "fileVersion": "7.0.1724.11613"
-          }
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authorization/2.2.0": {
@@ -897,7 +859,7 @@
           "System.Memory": "4.5.4",
           "System.Reflection.Metadata": "5.0.0",
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
-          "System.Text.Encoding.CodePages": "8.0.0",
+          "System.Text.Encoding.CodePages": "6.0.0",
           "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "runtime": {
@@ -1036,7 +998,7 @@
           "System.Runtime.Caching": "6.0.0",
           "System.Security.Cryptography.Cng": "5.0.0",
           "System.Security.Principal.Windows": "5.0.0",
-          "System.Text.Encoding.CodePages": "8.0.0",
+          "System.Text.Encoding.CodePages": "6.0.0",
           "System.Text.Encodings.Web": "7.0.0"
         },
         "runtime": {
@@ -1180,6 +1142,12 @@
           "Microsoft.Extensions.Primitives": "7.0.0"
         }
       },
+      "Microsoft.Extensions.Configuration/6.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Primitives": "7.0.0"
+        }
+      },
       "Microsoft.Extensions.Configuration.Abstractions/7.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "7.0.0"
@@ -1292,6 +1260,15 @@
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.323.6910"
           }
+        }
+      },
+      "Microsoft.Extensions.Options.ConfigurationExtensions/6.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "7.0.4",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Options": "7.0.1",
+          "Microsoft.Extensions.Primitives": "7.0.0"
         }
       },
       "Microsoft.Extensions.Primitives/7.0.0": {},
@@ -1464,23 +1441,6 @@
           "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {}
         }
       },
-      "MimeKit/4.4.0": {
-        "dependencies": {
-          "BouncyCastle.Cryptography": "2.3.0",
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
-          "System.Security.Cryptography.Pkcs": "8.0.0",
-          "System.Text.Encoding.CodePages": "8.0.0"
-        },
-        "runtime": {
-          "lib/net6.0/MimeKit.dll": {
-            "assemblyVersion": "4.4.0.0",
-            "fileVersion": "4.4.0.0"
-          }
-        },
-        "compile": {
-          "lib/net6.0/MimeKit.dll": {}
-        }
-      },
       "Mono.TextTemplating/2.2.1": {
         "dependencies": {
           "System.CodeDom": "4.4.0"
@@ -1528,6 +1488,39 @@
           "lib/net7.0/Serilog.dll": {}
         }
       },
+      "Serilog.Sinks.MSSqlServer/6.6.0": {
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "5.1.5",
+          "Microsoft.Extensions.Configuration": "6.0.1",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "6.0.0",
+          "Serilog": "3.1.1",
+          "Serilog.Sinks.PeriodicBatching": "3.1.0",
+          "System.Configuration.ConfigurationManager": "6.0.1"
+        },
+        "runtime": {
+          "lib/net6.0/Serilog.Sinks.MSSqlServer.dll": {
+            "assemblyVersion": "6.6.0.0",
+            "fileVersion": "6.6.0.0"
+          }
+        },
+        "compile": {
+          "lib/net6.0/Serilog.Sinks.MSSqlServer.dll": {}
+        }
+      },
+      "Serilog.Sinks.PeriodicBatching/3.1.0": {
+        "dependencies": {
+          "Serilog": "3.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Serilog.Sinks.PeriodicBatching.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/Serilog.Sinks.PeriodicBatching.dll": {}
+        }
+      },
       "System.Buffers/4.5.0": {},
       "System.CodeDom/4.4.0": {
         "runtime": {
@@ -1548,6 +1541,9 @@
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.922.41905"
           }
+        },
+        "compile": {
+          "lib/net6.0/System.Configuration.ConfigurationManager.dll": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.1": {
@@ -1583,17 +1579,7 @@
           "lib/net6.0/System.Drawing.Common.dll": {}
         }
       },
-      "System.Formats.Asn1/8.0.0": {
-        "runtime": {
-          "lib/net7.0/System.Formats.Asn1.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
-          }
-        },
-        "compile": {
-          "lib/net7.0/System.Formats.Asn1.dll": {}
-        }
-      },
+      "System.Formats.Asn1/5.0.0": {},
       "System.IdentityModel.Tokens.Jwt/6.35.0": {
         "dependencies": {
           "Microsoft.IdentityModel.JsonWebTokens": "6.35.0",
@@ -1673,29 +1659,12 @@
       "System.Security.AccessControl/6.0.0": {},
       "System.Security.Cryptography.Cng/5.0.0": {
         "dependencies": {
-          "System.Formats.Asn1": "8.0.0"
+          "System.Formats.Asn1": "5.0.0"
         }
       },
-      "System.Security.Cryptography.Pkcs/8.0.0": {
+      "System.Security.Cryptography.Pkcs/4.5.0": {
         "dependencies": {
-          "System.Formats.Asn1": "8.0.0"
-        },
-        "runtime": {
-          "lib/net7.0/System.Security.Cryptography.Pkcs.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/net7.0/System.Security.Cryptography.Pkcs.dll": {
-            "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
-          }
-        },
-        "compile": {
-          "lib/net7.0/System.Security.Cryptography.Pkcs.dll": {}
+          "System.Security.Cryptography.Cng": "5.0.0"
         }
       },
       "System.Security.Cryptography.ProtectedData/6.0.0": {
@@ -1719,7 +1688,7 @@
       },
       "System.Security.Cryptography.Xml/4.5.0": {
         "dependencies": {
-          "System.Security.Cryptography.Pkcs": "8.0.0",
+          "System.Security.Cryptography.Pkcs": "4.5.0",
           "System.Security.Permissions": "6.0.0"
         }
       },
@@ -1746,23 +1715,9 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Text.Encoding.CodePages/8.0.0": {
-        "runtime": {
-          "lib/net7.0/System.Text.Encoding.CodePages.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/net7.0/System.Text.Encoding.CodePages.dll": {
-            "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
-          }
-        },
-        "compile": {
-          "lib/net7.0/System.Text.Encoding.CodePages.dll": {}
+      "System.Text.Encoding.CodePages/6.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         }
       },
       "System.Text.Encodings.Web/7.0.0": {},
@@ -1800,7 +1755,6 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "BemCase.Domain": "1.0.0",
           "Core.Application": "1.0.0",
-          "Core.Mailing": "1.0.0",
           "Hangfire.AspNetCore": "1.8.12",
           "Microsoft.AspNetCore.Identity": "2.2.0"
         },
@@ -1857,26 +1811,14 @@
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.Extensions.Configuration.Binder": "7.0.4",
           "Newtonsoft.Json": "13.0.3",
-          "Serilog": "3.1.1"
+          "Serilog": "3.1.1",
+          "Serilog.Sinks.MSSqlServer": "6.6.0"
         },
         "runtime": {
           "Core.CrossCuttingConcerns.dll": {}
         },
         "compile": {
           "Core.CrossCuttingConcerns.dll": {}
-        }
-      },
-      "Core.Mailing/1.0.0": {
-        "dependencies": {
-          "Core.CrossCuttingConcerns": "1.0.0",
-          "MailKit": "4.4.0",
-          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0"
-        },
-        "runtime": {
-          "Core.Mailing.dll": {}
-        },
-        "compile": {
-          "Core.Mailing.dll": {}
         }
       },
       "Core.Persistence/1.0.0": {
@@ -2414,7 +2356,7 @@
         },
         "compileOnly": true
       },
-      "Microsoft.Extensions.Configuration/7.0.0.0": {
+      "Microsoft.Extensions.Configuration.Reference/7.0.0.0": {
         "compile": {
           "Microsoft.Extensions.Configuration.dll": {}
         },
@@ -2600,7 +2542,7 @@
         },
         "compileOnly": true
       },
-      "Microsoft.Extensions.Options.ConfigurationExtensions/7.0.0.0": {
+      "Microsoft.Extensions.Options.ConfigurationExtensions.Reference/7.0.0.0": {
         "compile": {
           "Microsoft.Extensions.Options.ConfigurationExtensions.dll": {}
         },
@@ -2879,6 +2821,12 @@
       "System.Dynamic.Runtime/7.0.0.0": {
         "compile": {
           "System.Dynamic.Runtime.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Formats.Asn1.Reference/7.0.0.0": {
+        "compile": {
+          "System.Formats.Asn1.dll": {}
         },
         "compileOnly": true
       },
@@ -3434,6 +3382,12 @@
         },
         "compileOnly": true
       },
+      "System.Text.Encoding.CodePages.Reference/7.0.0.0": {
+        "compile": {
+          "System.Text.Encoding.CodePages.dll": {}
+        },
+        "compileOnly": true
+      },
       "System.Text.Encoding.Reference/7.0.0.0": {
         "compile": {
           "System.Text.Encoding.dll": {}
@@ -3662,13 +3616,6 @@
       "path": "azure.identity/1.10.3",
       "hashPath": "azure.identity.1.10.3.nupkg.sha512"
     },
-    "BouncyCastle.Cryptography/2.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-IaVIiYxZLaBulveGDRUx/pBoW/Rc8QeXGF5u2E8xL8RWhVKCgfmtX9NUyGRbnSqnbFQU2zyP3MkXIdH+jUuQBw==",
-      "path": "bouncycastle.cryptography/2.3.0",
-      "hashPath": "bouncycastle.cryptography.2.3.0.nupkg.sha512"
-    },
     "FluentValidation/11.9.0": {
       "type": "package",
       "serviceable": true,
@@ -3718,13 +3665,6 @@
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
     },
-    "MailKit/4.4.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-cv+oiAOn2+LhhGUVvxpJjEOIZOTZBFDIDO9ebOfxqqU1f/PllHpKr5VjWOBsqeLrb+zLisxWSQDzM5C64XrRNA==",
-      "path": "mailkit/4.4.0",
-      "hashPath": "mailkit.4.4.0.nupkg.sha512"
-    },
     "MediatR/12.2.0": {
       "type": "package",
       "serviceable": true,
@@ -3766,13 +3706,6 @@
       "sha512": "sha512-XlVJzJ5wPOYW+Y0J6Q/LVTEyfS4ssLXmt60T0SPP+D8abVhBTl+cgw2gDHlyKYIkcJg7btMVh383NDkMVqD/fg==",
       "path": "microsoft.aspnetcore.authentication.core/2.2.0",
       "hashPath": "microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512"
-    },
-    "Microsoft.AspNetCore.Authentication.JwtBearer/7.0.17": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-QNv4f4RZBn2wyHz6zWjfK0lkDegavgeg0lGlQD4eSUY7tts+j4svv0vpDORrq4FnhQUZU+abtsvtmJI/QI6K4Q==",
-      "path": "microsoft.aspnetcore.authentication.jwtbearer/7.0.17",
-      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.7.0.17.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authorization/2.2.0": {
       "type": "package",
@@ -4068,6 +4001,13 @@
       "path": "microsoft.extensions.caching.memory/7.0.0",
       "hashPath": "microsoft.extensions.caching.memory.7.0.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.Configuration/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BUyFU9t+HzlSE7ri4B+AQN2BgTgHv/uM82s5ZkgU1BApyzWzIl48nDsG5wR1t0pniNuuyTBzG3qCW8152/NtSw==",
+      "path": "microsoft.extensions.configuration/6.0.1",
+      "hashPath": "microsoft.extensions.configuration.6.0.1.nupkg.sha512"
+    },
     "Microsoft.Extensions.Configuration.Abstractions/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -4158,6 +4098,13 @@
       "sha512": "sha512-pZRDYdN1FpepOIfHU62QoBQ6zdAoTvnjxFfqAzEd9Jhb2dfhA5i6jeTdgGgcgTWFRC7oT0+3XrbQu4LjvgX1Nw==",
       "path": "microsoft.extensions.options/7.0.1",
       "hashPath": "microsoft.extensions.options.7.0.1.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options.ConfigurationExtensions/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bXWINbTn0vC0FYc9GaQTISbxhQLAMrvtbuvD9N6JelEaIS/Pr62wUCinrq5bf1WRBGczt1v4wDhxFtVFNcMdUQ==",
+      "path": "microsoft.extensions.options.configurationextensions/6.0.0",
+      "hashPath": "microsoft.extensions.options.configurationextensions.6.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Primitives/7.0.0": {
       "type": "package",
@@ -4271,13 +4218,6 @@
       "path": "microsoft.win32.systemevents/6.0.0",
       "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
     },
-    "MimeKit/4.4.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-pKvznVpvK35cJb21LdjvhB3MW2FrlAqG3PH36uVKHhlgnfMS5tIRsKJEMgo0hiPyJJhN2f1llHptu2w8CvF9Vg==",
-      "path": "mimekit/4.4.0",
-      "hashPath": "mimekit.4.4.0.nupkg.sha512"
-    },
     "Mono.TextTemplating/2.2.1": {
       "type": "package",
       "serviceable": true,
@@ -4305,6 +4245,20 @@
       "sha512": "sha512-P6G4/4Kt9bT635bhuwdXlJ2SCqqn2nhh4gqFqQueCOr9bK/e7W9ll/IoX1Ter948cV2Z/5+5v8pAfJYUISY03A==",
       "path": "serilog/3.1.1",
       "hashPath": "serilog.3.1.1.nupkg.sha512"
+    },
+    "Serilog.Sinks.MSSqlServer/6.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3Shl1OoAcA3diHWNeFfxIZZvjsxNe4XGt5IrXDb6cHH8doYixp+Vr9mCHZQcdKRYvN8Flv3mv7giM/5kz0N68g==",
+      "path": "serilog.sinks.mssqlserver/6.6.0",
+      "hashPath": "serilog.sinks.mssqlserver.6.6.0.nupkg.sha512"
+    },
+    "Serilog.Sinks.PeriodicBatching/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NDWR7m3PalVlGEq3rzoktrXikjFMLmpwF0HI4sowo8YDdU+gqPlTHlDQiOGxHfB0sTfjPA9JjA7ctKG9zqjGkw==",
+      "path": "serilog.sinks.periodicbatching/3.1.0",
+      "hashPath": "serilog.sinks.periodicbatching.3.1.0.nupkg.sha512"
     },
     "System.Buffers/4.5.0": {
       "type": "package",
@@ -4348,12 +4302,12 @@
       "path": "system.drawing.common/6.0.0",
       "hashPath": "system.drawing.common.6.0.0.nupkg.sha512"
     },
-    "System.Formats.Asn1/8.0.0": {
+    "System.Formats.Asn1/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AJukBuLoe3QeAF+mfaRKQb2dgyrvt340iMBHYv+VdBzCUM06IxGlvl0o/uPOS7lHnXPN6u8fFRHSHudx5aTi8w==",
-      "path": "system.formats.asn1/8.0.0",
-      "hashPath": "system.formats.asn1.8.0.0.nupkg.sha512"
+      "sha512": "sha512-MTvUIktmemNB+El0Fgw9egyqT9AYSIk6DTJeoDSpc3GIHxHCMo8COqkWT1mptX5tZ1SlQ6HJZ0OsSvMth1c12w==",
+      "path": "system.formats.asn1/5.0.0",
+      "hashPath": "system.formats.asn1.5.0.0.nupkg.sha512"
     },
     "System.IdentityModel.Tokens.Jwt/6.35.0": {
       "type": "package",
@@ -4439,12 +4393,12 @@
       "path": "system.security.cryptography.cng/5.0.0",
       "hashPath": "system.security.cryptography.cng.5.0.0.nupkg.sha512"
     },
-    "System.Security.Cryptography.Pkcs/8.0.0": {
+    "System.Security.Cryptography.Pkcs/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ULmp3xoOwNYjOYp4JZ2NK/6NdTgiN1GQXzVVN1njQ7LOZ0d0B9vyMnhyqbIi9Qw4JXj1JgCsitkTShboHRx7Eg==",
-      "path": "system.security.cryptography.pkcs/8.0.0",
-      "hashPath": "system.security.cryptography.pkcs.8.0.0.nupkg.sha512"
+      "sha512": "sha512-TGQX51gxpY3K3I6LJlE2LAftVlIMqJf0cBGhz68Y89jjk3LJCB6SrwiD+YN1fkqemBvWGs+GjyMJukl6d6goyQ==",
+      "path": "system.security.cryptography.pkcs/4.5.0",
+      "hashPath": "system.security.cryptography.pkcs.4.5.0.nupkg.sha512"
     },
     "System.Security.Cryptography.ProtectedData/6.0.0": {
       "type": "package",
@@ -4481,12 +4435,12 @@
       "path": "system.text.encoding/4.3.0",
       "hashPath": "system.text.encoding.4.3.0.nupkg.sha512"
     },
-    "System.Text.Encoding.CodePages/8.0.0": {
+    "System.Text.Encoding.CodePages/6.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OZIsVplFGaVY90G2SbpgU7EnCoOO5pw1t4ic21dBF3/1omrJFpAGoNAVpPyMVOC90/hvgkGG3VFqR13YgZMQfg==",
-      "path": "system.text.encoding.codepages/8.0.0",
-      "hashPath": "system.text.encoding.codepages.8.0.0.nupkg.sha512"
+      "sha512": "sha512-ZFCILZuOvtKPauZ/j/swhvw68ZRi9ATCfvGbk1QfydmcXBkIWecWKn/250UH7rahZ5OoDBaiAudJtPvLwzw85A==",
+      "path": "system.text.encoding.codepages/6.0.0",
+      "hashPath": "system.text.encoding.codepages.6.0.0.nupkg.sha512"
     },
     "System.Text.Encodings.Web/7.0.0": {
       "type": "package",
@@ -4537,11 +4491,6 @@
       "sha512": ""
     },
     "Core.CrossCuttingConcerns/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Core.Mailing/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -4986,7 +4935,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Extensions.Configuration/7.0.0.0": {
+    "Microsoft.Extensions.Configuration.Reference/7.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -5141,7 +5090,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Extensions.Options.ConfigurationExtensions/7.0.0.0": {
+    "Microsoft.Extensions.Options.ConfigurationExtensions.Reference/7.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -5372,6 +5321,11 @@
       "sha512": ""
     },
     "System.Dynamic.Runtime/7.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Formats.Asn1.Reference/7.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -5832,6 +5786,11 @@
       "sha512": ""
     },
     "System.ServiceProcess/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Text.Encoding.CodePages.Reference/7.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

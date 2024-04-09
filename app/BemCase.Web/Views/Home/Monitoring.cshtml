@@ -9,13 +9,13 @@
                 <div class="col-6">
                     <p class="mb-0">Name</p>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" id="appName" />
+                        <input type="text" class="form-control" id="appName" required />
                     </div>
                 </div>
                 <div class="col-6">
                     <p class="mb-0">Url</p>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" id="url" />
+                        <input type="text" class="form-control" id="url" required />
                     </div>
                 </div>
 
@@ -27,7 +27,7 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text">Every</div>
                         </div>
-                        <input type="number" class="form-control" id="unitVal" placeholder="Unit">
+                        <input type="number" class="form-control" id="unitVal" placeholder="Unit" required />
                     </div>
                 </div>
                 <div class="col-8">
@@ -43,7 +43,9 @@
             </div>
             <div class="row">
                 <div class="pt-2">
-                    <button type="submit" class="btn btn-primary btn-md">Save</button>
+                    <input type="hidden" id="idVal" value="" />
+                    <button type="submit" class="btn btn-success btn-md">Save</button>
+                    <button type="reset" id="resetformBtn" class="btn btn-primary btn-md" style="display:none;">Add New</button>
                 </div>
             </div>
         </div>
@@ -59,31 +61,15 @@
                 <th scope="col">Name</th>
                 <th scope="col">URL</th>
                 <th scope="col">Frequency</th>
+                <th scope="col">Action</th>
             </tr>
         </thead>
-        <tbody>
-            <tr>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>mdo</td>
-            </tr>
-
+        <tbody id="tableData">
         </tbody>
     </table>
     <div class="row">
         <nav aria-label="...">
             <ul class="pagination" id="pagination">
-                @* <li id="pagePrev" class="page-item">
-                    <span class="page-link">Previous</span>
-                </li>
-                <li class="page-item"><a class="page-link">1</a></li>
-                <li class="page-item active" aria-current="page">
-                    <span class="page-link">2</span>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                </li> *@
             </ul>
         </nav>
     </div>

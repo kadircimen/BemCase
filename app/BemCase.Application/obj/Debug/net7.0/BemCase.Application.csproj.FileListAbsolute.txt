@@ -21,3 +21,24 @@ C:\Users\Kadir Çimen\Desktop\Projects\BemCase\app\BemCase.Application\obj\Debug
 C:\Users\Kadir Çimen\Desktop\Projects\BemCase\app\BemCase.Application\obj\Debug\net7.0\refint\BemCase.Application.dll
 C:\Users\Kadir Çimen\Desktop\Projects\BemCase\app\BemCase.Application\obj\Debug\net7.0\BemCase.Application.pdb
 C:\Users\Kadir Çimen\Desktop\Projects\BemCase\app\BemCase.Application\obj\Debug\net7.0\ref\BemCase.Application.dll
+C:\Users\KadirCimen\Desktop\Proje\BemCase\app\BemCase.Application\bin\Debug\net7.0\BemCase.Application.deps.json
+C:\Users\KadirCimen\Desktop\Proje\BemCase\app\BemCase.Application\bin\Debug\net7.0\BemCase.Application.dll
+C:\Users\KadirCimen\Desktop\Proje\BemCase\app\BemCase.Application\bin\Debug\net7.0\BemCase.Application.pdb
+C:\Users\KadirCimen\Desktop\Proje\BemCase\app\BemCase.Application\bin\Debug\net7.0\BemCase.Domain.dll
+C:\Users\KadirCimen\Desktop\Proje\BemCase\app\BemCase.Application\bin\Debug\net7.0\Core.Application.dll
+C:\Users\KadirCimen\Desktop\Proje\BemCase\app\BemCase.Application\bin\Debug\net7.0\Core.CrossCuttingConcerns.dll
+C:\Users\KadirCimen\Desktop\Proje\BemCase\app\BemCase.Application\bin\Debug\net7.0\Core.Persistence.dll
+C:\Users\KadirCimen\Desktop\Proje\BemCase\app\BemCase.Application\bin\Debug\net7.0\Core.Application.pdb
+C:\Users\KadirCimen\Desktop\Proje\BemCase\app\BemCase.Application\bin\Debug\net7.0\BemCase.Domain.pdb
+C:\Users\KadirCimen\Desktop\Proje\BemCase\app\BemCase.Application\bin\Debug\net7.0\Core.CrossCuttingConcerns.pdb
+C:\Users\KadirCimen\Desktop\Proje\BemCase\app\BemCase.Application\bin\Debug\net7.0\Core.Persistence.pdb
+C:\Users\KadirCimen\Desktop\Proje\BemCase\app\BemCase.Application\obj\Debug\net7.0\BemCase.Application.csproj.AssemblyReference.cache
+C:\Users\KadirCimen\Desktop\Proje\BemCase\app\BemCase.Application\obj\Debug\net7.0\BemCase.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KadirCimen\Desktop\Proje\BemCase\app\BemCase.Application\obj\Debug\net7.0\BemCase.Application.AssemblyInfoInputs.cache
+C:\Users\KadirCimen\Desktop\Proje\BemCase\app\BemCase.Application\obj\Debug\net7.0\BemCase.Application.AssemblyInfo.cs
+C:\Users\KadirCimen\Desktop\Proje\BemCase\app\BemCase.Application\obj\Debug\net7.0\BemCase.Application.csproj.CoreCompileInputs.cache
+C:\Users\KadirCimen\Desktop\Proje\BemCase\app\BemCase.Application\obj\Debug\net7.0\BemCase.Application.csproj.CopyComplete
+C:\Users\KadirCimen\Desktop\Proje\BemCase\app\BemCase.Application\obj\Debug\net7.0\BemCase.Application.dll
+C:\Users\KadirCimen\Desktop\Proje\BemCase\app\BemCase.Application\obj\Debug\net7.0\refint\BemCase.Application.dll
+C:\Users\KadirCimen\Desktop\Proje\BemCase\app\BemCase.Application\obj\Debug\net7.0\BemCase.Application.pdb
+C:\Users\KadirCimen\Desktop\Proje\BemCase\app\BemCase.Application\obj\Debug\net7.0\ref\BemCase.Application.dll

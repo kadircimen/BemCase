@@ -10,12 +10,11 @@ namespace Core.CrossCuttingConcerns.Exceptions;
 public class ExceptionMiddleware
 {
     private readonly RequestDelegate _next;
-    //private readonly LoggerServiceBase _logger;
-    public ExceptionMiddleware(RequestDelegate next
-        //, LoggerServiceBase logger)
-    ){
+    private readonly LoggerServiceBase _logger;
+    public ExceptionMiddleware(RequestDelegate next, LoggerServiceBase logger)
+    {
         _next = next;
-        //_logger = logger;
+        _logger = logger;
     }
     public async Task Invoke(HttpContext context)
     {
@@ -31,7 +30,7 @@ public class ExceptionMiddleware
     private Task HandleExceptionAsync(HttpContext context, Exception exception)
     {
         context.Response.ContentType = "application/json";
-        //_logger.Error(JsonConvert.SerializeObject(CreateLogData(context, exception)));
+        _logger.Error(JsonConvert.SerializeObject(CreateLogData(context, exception)));
         if (exception.GetType() == typeof(ValidationException)) return CreateValidationException(context, exception);
         else if (exception.GetType() == typeof(BusinessException)) return CreateBusinessException(context, exception);
         else return CreateInternalException(context, exception);

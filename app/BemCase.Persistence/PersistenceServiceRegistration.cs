@@ -34,9 +34,7 @@ public static class PersistenceServiceRegistration
             options.ExpireTimeSpan = TimeSpan.FromDays(30);
         });
         services.AddAuthentication();
-
         services.AddScoped<IHealthCheckUrlRepository, HealthCheckUrlRepository>();
-
         return services;
     }
 }

@@ -40,19 +40,15 @@ public class EfRepositoryBase<TEntity, TContext> : IAsyncRepository<TEntity>
         await Context.SaveChangesAsync();
         return entity;
     }
-    public async Task<TEntity> AddWithRelationAsync(TEntity entity, Action<TEntity> relatedEntityAction)
+    public async Task<TEntity> DeleteAsync(TEntity entity)
     {
-        Context.Entry(entity).State = EntityState.Added;
-        relatedEntityAction?.Invoke(entity);
+        Context.Remove(entity);
         await Context.SaveChangesAsync();
         return entity;
     }
-    public async Task<IEnumerable<TEntity>> UpdateRangeAsync(IEnumerable<TEntity> entity)
+    public async Task<TEntity> UpdateAsync(TEntity entity)
     {
-        foreach (var e in entity)
-        {
-            Context.Entry(e).State = EntityState.Modified;
-        }
+        Context.Entry(entity).State = EntityState.Modified;
         await Context.SaveChangesAsync();
         return entity;
     }

@@ -7,7 +7,7 @@ using System.Diagnostics;
 
 namespace BemCase.Web.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class HomeController : BaseController
     {
         private readonly ILogger<HomeController> _logger;
@@ -19,6 +19,7 @@ namespace BemCase.Web.Controllers
 
         public IActionResult Index()
         {
+
             return View();
         }
         public IActionResult Monitoring()
@@ -29,15 +30,11 @@ namespace BemCase.Web.Controllers
         {
             return View();
         }
+        [AllowAnonymous]
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-        [HttpPost]
-        public IActionResult CreateJob([FromBody] CreateHealtCheckUrlRequest request)
-        {
-            return View(request);
         }
     }
 }

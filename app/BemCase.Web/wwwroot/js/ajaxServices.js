@@ -1,6 +1,5 @@
 ﻿var ajaxServices = (function () {
     function get(url, queryData, successCallback, errorCallback) {
-        console.log(JSON.stringify(queryData))
         $.ajax({
             url: url,
             type: 'GET',
@@ -22,7 +21,6 @@
             error: errorCallback
         });
     }
-
     return {
         get: get,
         post: post
