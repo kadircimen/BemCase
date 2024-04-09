@@ -39,7 +39,6 @@ veritabanı erişim katmanları için genel mekanizmaları içerir.
 
 ## Kurulum
 
-VERİTABANLARI KULLANMAK İÇİN BİLGİSAYARINIZDA DOCKER KURULU OLMALIDIR.
 Appsettings'de mssql localdb ayarları yapılmıştır. Bunun dışında bir server yapılandırması için comment olarak bir connection string daha bırakılmıştır. Kendi server ayarlarınızı yaparak uygulamayı dbye bağlayabilirsiniz.
 
 ## DB Migration
